@@ -22,49 +22,54 @@
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="/bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
+
   </head>
   <body>
     <!--[if IE]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    
-    <div class="fullscreen-bg" style="z-index: 0;" id="intro">
-        <video muted autoplay class="fullscreen-video">
-            <source id="source" src="images/Sequence1.mp4" type="video/mp4">
-        </video>
-    </div>
-    <div class="container">
-    <!--
-      <div class="header">
-        <ul class="nav nav-pills float-right">
-          <li class="nav-item">
-            <a class="nav-link active" href="#">Home</a>
-          </li>
-          <li>
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li>
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-        </ul>
-        <h3 class="text-muted">User Experience Project</h3>
-      </div> -->
 
-      <div class="row marketing">
-        <div class="col-lg-12">
-          <h1 id="welcome">Welcome, Commander</h1>
-          <ul id="nav">
-            <li>Enter Hanger</li>
-            <li>Trade</li>
-            <li>Bounty Hunting</li>
-            <li>Exploration</li>
-          </ul>
-        </div>
+      <div class="fullscreen-bg" style="z-index: -1;" id="intro">
+          <video muted autoplay class="fullscreen-video">
+              <source id="source" src="images/Sequence1.mp4" type="video/mp4">
+          </video>
       </div>
+      <section class="intro">
+        
+        <div class="row content" id="home">
+          <div class="col-lg-12">
+            <h1 id="welcome">Welcome, Commander</h1>
+            <ul id="nav">
+              <li><a id="hangarLink">Enter Hangar</a></li>
+              <li>Trade</li>
+              <li>Bounty Hunting</li>
+              <li>Exploration</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section>
+          <div class="row content" id="hangar">
+            <div class="col-lg-12">
+                <h1>Select a Ship</h1>
+                <ul id="nav">
+                  <li><a id="sidewinderLink">Sidewinder MkI</a></li>
+                  <li>Anaconda</li>
+                  <li>Cobra MkIII</li>
+                  <li>Vulture</li>
+                </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+          <div class="row content" id="sidewinder">
+            <div class="col-lg-7">
+            </div>
+          </div>
+      </section>
 
-      
-    </div>
-    
+
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
       (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
@@ -80,6 +85,7 @@
     <script src="/bower_components/jquery/dist/jquery.js"></script>
     <script src="/bower_components/tether/dist/js/tether.js"></script>
     <script src="/bower_components/modernizr/modernizr.js"></script>
+    <script src="/bower_components/jquery.scrollTo/jquery.scrollTo.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
     
