@@ -4,7 +4,8 @@
   "dependencies": {
     "bootstrap": "~4.0.0-alpha.6",
     "modernizr": "~2.8.1",
-    "jquery.scrollTo": "^2.1.2"
+    "jquery.scrollTo": "^2.1.2",
+    "fullpage.js": "^2.9.4"
   },
   "overrides": {
     "bootstrap": {
