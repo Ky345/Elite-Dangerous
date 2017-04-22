@@ -34,45 +34,119 @@
               <source id="source" src="images/Sequence1.mp4" type="video/mp4">
           </video>
     </div>
+    <ul id="menu">
+        <li data-menuanchor="secondPage" class="active"><a href="#secondPage/0">Hangar</a></li>
+        <li data-menuanchor="thirdPage"><a href="#thirdPage">Trade</a></li>
+        <li data-menuanchor="fourthPage"><a href="#fourthPage">Bounty Hunting</a></li>
+        <li data-menuanchor="fifthpage"><a href="#fifthPage">Exploration</a></li>
+    </ul>
     <div id="fullpage">
       <div class="section active" id="section0">
         
-        <div class="container">
+        <div class="container midContainer">
           <div class="row content" id="home">
             <div class="col-lg-12">
               <h1 id="welcome">Welcome, Commander</h1>
               <ul id="nav">
                 <li><a href="#secondPage" id="hangarLink">Enter Hangar</a></li>
-                <li>Trade</li>
-                <li>Bounty Hunting</li>
-                <li>Exploration</li>
+                <li><a href="#thirdPage" id="tradeLink">Trade</a></li>
+                <li><a href="#fourthPage" id="bountyLink">Bounty Hunting</a></li>
+                <li><a href="#fifthPage" id="exploreLink">Exploration</a></li>
               </ul>
             </div>
           </div>
         </div>
       </div>
       <div class="section" id="section1">
-        <div class="container">
-          <div class="row content" id="hangar">
-            <div class="col-lg-12">
-              <h1>Select a Ship</h1>
-              <ul id="nav">
-                <li><a href="#thirdPage" id="sidewinderLink">Sidewinder MkI</a></li>
-                <li>Anaconda</li>
-                <li>Cobra MkIII</li>
-                <li>Vulture</li>
-              </ul>
+        <div class="container midContainer">
+          <div class="slide">
+            <div class="row content" id="hangar">
+              <div class="col-lg-12">
+                <h1>Select a Ship</h1>
+                <ul id="nav">
+                  <li><a href="#secondPage/1" id="sidewinderLink">Sidewinder MkI</a></li>
+                  <li><a href="#secondPage/2" id="anacondaLink">Anaconda</a></li>
+                  <li><a href="#secondPage/3" id="cobraLink">Cobra MkIII</a></li>
+                  <li><a href="#secondPage/4" id="vultureLink">Hauler</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="row content" id="sidewinder">
+              <div class="col-lg-6">
+                <h2>Sidewinder MkI</h2>
+                <p>The Sidewinder is the default craft offered throughout the game. The player starts in one, and if at any time their ship is destroyed they can get a free Sidewinder (lended by Pilots Federation) if they can't or don't want to replace their previous ship. New players who still struggle with learning the game, may find themselves flying in a Sidewinder for a longer time or going back to it often.<br><br>
+                Although the Sidewinder is cheap, it is not harmless; it is among the top when it comes to manoeuvrability compared to other ships. In particular, it can out-turn most other ships, being topped in that category only by the Eagle, Vulture, and Imperial Courier, and has solid lateral thrust.</p>
+                <a class="return" href="#secondPage/0">Return to Hangar</a>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="row content" id="anaconda">
+              <div class="col-lg-6">
+                <h2>Anaconda</h2>
+                <p>At a base cost of almost 147 million credits, the Anaconda used to be the most expensive ship in Elite Dangerous, until the Federal Corvette and the Imperial Cutter took that title when they were added. It is a slow but enormous vessel that excels in all roles: combat, exploration and trading, and was the pinnacle of a late game ship.<br><br>As it stands the Anaconda is now the third most expensive ship, but it doesn't have any rank requirements with the Federation or the Empire associated with it and is therefore easier to acquire than the Federal Corvette or the Imperial Cutter. Of the ships able to be piloted by a player in the game, the Anaconda is currently the fifth largest in volume and the fourth longest, being surpassed in length and volume by the Beluga Liner, Imperial Cutter and Federal Corvette (in that order), and in volume by the Type-9 Heavy. </p>
+                <a class="return" href="#secondPage/0">Return to Hangar</a>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="row content" id="cobra">
+              <div class="col-lg-6">
+                <h2>Cobra MkIII</h2>
+                <p>The Cobra MkIII is a larger and more popular version of the Cobra MkI. It was first seen in service in 3100 AD, originally manufactured by Cowell &amp; McGrath Shipyard, Lave. Since Cowell &amp; McGrath's acquisition by Faulcon DeLacy it is now branded as a Faulcon DeLacy made ship.<br><br>
+                The Cobra's carrying capacity, being more than double that of the Hauler, and its cost, being almost one third that of the Type-6, makes it a logical stepping stone for aspiring traders as there is no other ship capable of hauling more cargo at the Cobra's size and cost. In addition to its large cargo hold it has much better combat potential than freighters and can defend itself or run away from hostile interdictions. What's more is that the Cobra is an ideal craft to plunder the space lines in for a pirate or smuggler due to the Cobra's ample capacity for loot, the ability to outrun most other ships and its relatively low heat signature.</p>
+                <a class="return" href="#secondPage/0">Return to Hangar</a>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="row content" id="vulture">
+              <div class="col-lg-6">
+                <h2>Hauler</h2>
+                <p>The Hauler is a light freighter that was designed to give pilots a ship with a sizeable cargo hold for a relatively low price. It is not a combat ship however; it is slow for its size, poorly armoured and shielded, and features only a single small weapon hardpoint.<br><br>
+                However, this craft is good for exploration; with its relatively long jump range when geared for exploring (28.55LY), not only is it affordable for early explorers, but many explorers actively prefer it even when they can afford a more expensive craft. Low overhead in terms of purchase price, outfitting, fuel, maintenance, and even insurance, means high profit. If used correctly, this ship can allow new pilots to turn a large profit quickly.</p>
+                <a class="return" href="#secondPage/0">Return to Hangar</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
       <div class="section" id="section2">
         <div class="container">
-          <div class="row content" id="sidewinder">
-            <div class="col-lg-12">
-              <h1>Sidewinder MkI</h1>
+          <div class="row content" id="trade">
+              <div class="col-lg-12">
+                <h1>Trade</h1>
+                <p>In its simplest form, trading is simply buying goods on the Commodities Market in one location and selling them at a higher price in another for profit. Trading links to a dynamic background economy simulation based on player activity, which results in changes in prices and volumes of goods in different systems over time, and even the colonization of new systems.<br><br>
+
+                Traders are well-advised to keep some cash in reserve! If by any chance the player loses their ship - whether to pirates or simply a docking accident - the cargo is not insured. For this reason prudent traders will never spend more than 50% or 60% of their credits on any one cargo. No matter how tempting it can be to stuff the cargo hold with every last bit of Gold or Progenitor Cells, it is generally not worth the risk of losing all of your working capital at once.</p>
+              </div>
             </div>
-          </div>
+        </div>
+      </div>
+      <div class="section" id="section3">
+        <div class="container">
+          <div class="row content" id="bountyhunt">
+              <div class="col-lg-12">
+                <h1>Bounty Hunting</h1>
+                <p>Any player can collect a bounty by killing a wanted player or NPC. The ship scanner can determine if the selected target is "Clean" or if there is a warrant for their destruction. Bounties outside of the current jurisdiction are not shown by the ship scanner so it is recommended that bounty hunters equip a Kill Warrant Scanner to scan for those extra bounties (bind it to a fire group, aim at the target and "shoot" until the scan is finished). It is also recommended to have a Frame Shift Wake Scanner equipped, to scan any High Energy Wakes, in case the target jumps using Frame Shift Drive or FSD.<br><br>
+
+                Bounty hunters will often loiter outside stations in order to scan other ships when they slow down to enter the docking area, but many bounty hunters are most active at RES (Resource Extraction Sites) or Nav Beacons since many wanted ships will appear at both locations. Most NPC ships will pass through the Nav Beacons making them excellent areas for both NPC and player bounty hunters. The Resource Extraction Sites can be mixed in their populations. Isolated clusters of asteroids rarely contain any activity at all whereas the planetary rings of busy planets are rife with pirates looking to prey on miners. This makes planetary rings advisable for any prospective bounty hunters.</p>
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="section" id="section4">
+        <div class="container">
+          <div class="row content" id="exploration">
+              <div class="col-lg-12">
+                <h1>Exploration</h1>
+                <p>Explorers have the opportunity to earn income and gain reputation by making pioneering jumps into unexplored systems, and gathering data on planets, stars and other points of interest within systems. Exploration data can be sold at the Universal Cartographics tab of Starport Services. The first player who sells information about a celestial body will be credited in-game with a "Discovered By" tag on the Galaxy Map.<br><br>
+
+                For example, one station may know about all the planets in a star system, but not have specific information on the planet surface. If you equip your ship with a surface scanner, you can then sell this complementary information for a small price. If you are able to explore a star system where no data has been reported before, and you collect all data on planet names and also surface information etc, then you will get a much bigger reward.</p>
+              </div>
+            </div>
         </div>
       </div>
     </div>
