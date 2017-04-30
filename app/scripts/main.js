@@ -14,7 +14,7 @@ $(function(){
             opacity: '-1'
           }, 500);
         }
-        if(nextIndex == 2) {
+        if(nextIndex == 2 || nextIndex == 3 || nextIndex == 4 || nextIndex == 5) {
           var newVideo = $('<div class="fullscreen-bg" id="idle" style="z-index: -2;"><video loop muted autoplay class="fullscreen-video"><source id="source" src="images/Sequence2.mp4" type="video/mp4"></video></div>');
           $('.fullscreen-bg').last().after(newVideo);
           setTimeout(function() {
@@ -106,7 +106,15 @@ $(function(){
       $('#intro video').on('ended',function(){
         $('#intro').remove();
       }); 
-    };
+    }
+    xhr.onprogress = function(oEvent){
+
+      if(oEvent.lengthComputable) {
+         var percentComplete = Math.floor((oEvent.loaded/oEvent.total)*100);
+
+        $('#loader').html(percentComplete+'%');
+       }
+     }
 
     xhr.send();
 
