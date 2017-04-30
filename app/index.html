@@ -26,16 +26,21 @@
 
   </head>
   <body>
+    <div id="loader-wrapper">
+      <div id="loader"></div>
+      <div class="loader-section section-left"></div>
+      <div class="loader-section section-right"></div>
+    </div>
     <!--[if IE]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     <div class="fullscreen-bg" style="z-index: -1;" id="intro">
-          <video muted autoplay class="fullscreen-video">
-              <source id="source" src="images/Sequence1.mp4" type="video/mp4">
+          <video id="video" muted autoplay class="fullscreen-video">
+              <source id="source" type="video/mp4">
           </video>
     </div>
     <ul id="menu">
-        <li data-menuanchor="secondPage" class="active"><a href="#secondPage/0">Hangar</a></li>
+        <li data-menuanchor="secondPage"><a href="#secondPage/0">Hangar</a></li>
         <li data-menuanchor="thirdPage"><a href="#thirdPage">Trade</a></li>
         <li data-menuanchor="fourthPage"><a href="#fourthPage">Bounty Hunting</a></li>
         <li data-menuanchor="fifthpage"><a href="#fifthPage">Exploration</a></li>
@@ -46,6 +51,7 @@
         <div class="container midContainer">
           <div class="row content" id="home">
             <div class="col-lg-12">
+              <img id="logo" src="images/logo.png"/>
               <h1 id="welcome">Welcome, Commander</h1>
               <ul id="nav">
                 <li><a href="#secondPage" id="hangarLink">Enter Hangar</a></li>
@@ -78,6 +84,7 @@
                 <h2>Sidewinder MkI</h2>
                 <p>The Sidewinder is the default craft offered throughout the game. The player starts in one, and if at any time their ship is destroyed they can get a free Sidewinder (lended by Pilots Federation) if they can't or don't want to replace their previous ship. New players who still struggle with learning the game, may find themselves flying in a Sidewinder for a longer time or going back to it often.<br><br>
                 Although the Sidewinder is cheap, it is not harmless; it is among the top when it comes to manoeuvrability compared to other ships. In particular, it can out-turn most other ships, being topped in that category only by the Eagle, Vulture, and Imperial Courier, and has solid lateral thrust.</p>
+                <a class="return" href="#secondPage/2">Anaconda</a>
                 <a class="return" href="#secondPage/0">Return to Hangar</a>
               </div>
             </div>
@@ -87,6 +94,8 @@
               <div class="col-lg-6">
                 <h2>Anaconda</h2>
                 <p>At a base cost of almost 147 million credits, the Anaconda used to be the most expensive ship in Elite Dangerous, until the Federal Corvette and the Imperial Cutter took that title when they were added. It is a slow but enormous vessel that excels in all roles: combat, exploration and trading, and was the pinnacle of a late game ship.<br><br>As it stands the Anaconda is now the third most expensive ship, but it doesn't have any rank requirements with the Federation or the Empire associated with it and is therefore easier to acquire than the Federal Corvette or the Imperial Cutter. Of the ships able to be piloted by a player in the game, the Anaconda is currently the fifth largest in volume and the fourth longest, being surpassed in length and volume by the Beluga Liner, Imperial Cutter and Federal Corvette (in that order), and in volume by the Type-9 Heavy. </p>
+                <a class="return hangarleft" href="#secondPage/1">Sidewinder MkI</a>
+                <a class="return hangarright" href="#secondPage/3">Cobra MkIII</a>
                 <a class="return" href="#secondPage/0">Return to Hangar</a>
               </div>
             </div>
@@ -97,6 +106,8 @@
                 <h2>Cobra MkIII</h2>
                 <p>The Cobra MkIII is a larger and more popular version of the Cobra MkI. It was first seen in service in 3100 AD, originally manufactured by Cowell &amp; McGrath Shipyard, Lave. Since Cowell &amp; McGrath's acquisition by Faulcon DeLacy it is now branded as a Faulcon DeLacy made ship.<br><br>
                 The Cobra's carrying capacity, being more than double that of the Hauler, and its cost, being almost one third that of the Type-6, makes it a logical stepping stone for aspiring traders as there is no other ship capable of hauling more cargo at the Cobra's size and cost. In addition to its large cargo hold it has much better combat potential than freighters and can defend itself or run away from hostile interdictions. What's more is that the Cobra is an ideal craft to plunder the space lines in for a pirate or smuggler due to the Cobra's ample capacity for loot, the ability to outrun most other ships and its relatively low heat signature.</p>
+                <a class="return hangarleft" href="#secondPage/2">Anaconda</a>
+                <a class="return hangarright" href="#secondPage/4">Vulture</a>
                 <a class="return" href="#secondPage/0">Return to Hangar</a>
               </div>
             </div>
@@ -107,6 +118,7 @@
                 <h2>Hauler</h2>
                 <p>The Hauler is a light freighter that was designed to give pilots a ship with a sizeable cargo hold for a relatively low price. It is not a combat ship however; it is slow for its size, poorly armoured and shielded, and features only a single small weapon hardpoint.<br><br>
                 However, this craft is good for exploration; with its relatively long jump range when geared for exploring (28.55LY), not only is it affordable for early explorers, but many explorers actively prefer it even when they can afford a more expensive craft. Low overhead in terms of purchase price, outfitting, fuel, maintenance, and even insurance, means high profit. If used correctly, this ship can allow new pilots to turn a large profit quickly.</p>
+                <a class="return" href="#secondPage/3">Cobra MkIII</a>
                 <a class="return" href="#secondPage/0">Return to Hangar</a>
               </div>
             </div>

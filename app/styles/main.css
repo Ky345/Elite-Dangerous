@@ -318,3 +318,102 @@ section {
 p {
   background-color: rgba(0, 0, 0, 0.6);
 }
+
+#logo {
+  display: block;
+  opacity: 0;
+  margin: 0 auto;
+  margin-top: -200px;
+}
+
+.hangarleft {
+  width: 49%;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.hangarright {
+  width: 50%;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+/* 
+Preloader code by Ihatetomatoes.net
+https://ihatetomatoes.net/create-custom-preloading-screen/
+*/
+
+#loader-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+}
+#loader {
+  display: block;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  width: 185px;
+  height: 185px;
+  margin: -75px 0 0 -75px;
+  z-index: 1001;
+}
+
+#loader:after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  background-image: url('../images/ring-alt.svg')
+}
+
+
+
+#loader-wrapper .loader-section {
+  position: fixed;
+  top: 0;
+  width: 51%;
+  height: 100%;
+  background: black;
+  z-index: 1000;
+  opacity: 1;
+}
+
+#loader-wrapper .loader-section.section-left {
+  left: 0;
+}
+#loader-wrapper .loader-section.section-right {
+  right: 0;
+}
+
+/* Loaded styles */
+.loaded #loader-wrapper .loader-section.section-left {
+ 
+
+  -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);  /* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6  */
+          transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);  /* Chrome 26, Firefox 16+, iOS 7+, IE 10+, Opera, Safari 6.1+  */
+}
+.loaded #loader-wrapper .loader-section.section-right {
+
+
+  -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);  /* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6  */
+          transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);  /* Chrome 26, Firefox 16+, iOS 7+, IE 10+, Opera, Safari 6.1+  */
+}
+.loaded #loader {
+  opacity: 0;
+
+
+}
+.loaded #loader-wrapper {
+  visibility: hidden;
+
+
+
+  -webkit-transition: all 0.3s 1s ease-out;  /* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6  */
+          transition: all 0.3s 1s ease-out;  /* Chrome 26, Firefox 16+, iOS 7+, IE 10+, Opera, Safari 6.1+  */
+}
